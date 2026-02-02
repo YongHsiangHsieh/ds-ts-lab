@@ -13,6 +13,11 @@ interface Colleague {
   };
 }
 
+interface ColleagueHistory {
+  current: Colleague[];
+  former: Colleague[];
+}
+
 // (Optional) Change the names below to your friends.
 
 const friend1: Friend = {
@@ -58,7 +63,7 @@ const colleague3: Colleague = {
   },
 };
 
-const colleagues = {
+export const colleagues: ColleagueHistory = {
   current: [colleague1, colleague2, colleague3],
   former: [],
 };
